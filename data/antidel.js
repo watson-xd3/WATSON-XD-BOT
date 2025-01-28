@@ -76,7 +76,6 @@ async function getAllAntiDeleteSettings() {
         return [];
     }
 }
-
 module.exports = {
     AntiDelDB,
     initializeAntiDeleteSettings,
