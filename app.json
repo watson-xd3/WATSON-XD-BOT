@@ -1,0 +1,112 @@
+{
+  "name": "WATSON-XD-BOT",
+  "description": "A whatsapp bot with rich functions created by Watsonfourpence",
+    "logo": "https://i.imgur.com/QxeVvOc.jpeg",
+  "keywords": [
+    "WATSON-XD-BOT"
+  ],
+  "repository": "https://github.com/watson-xd3/WATSON-XD-BOT/main",
+  "stack": "container",
+  "env": {
+    "DATABASE_URL": {
+      "description": "your mongodb database url",
+      "required": false,
+      "value": "mongodb+srv://Bikash:Bikash@bikash.yl2nhcy.mongodb.net/?retryWrites=true&w=majority"
+    },
+    "SESSION_ID": {
+      "description": "Watson_497da22c-a3f4-40e0-a33f-d13aa9eb2155,
+      "required": true,
+      "value": ""
+      },
+    "OWNER_NUMBER": {
+      "description": "put your Number and name for Owner",
+      "required": true,
+      "value": "263789622747,WatsonFourpence♥️The Developer"
+    },
+    "owner_react_emojie": {
+      "description": "put one emojie for owner reacts",
+      "required": false,
+      "value": "🤩"
+    },
+    "MODE": {
+      "description": "mode public or private",
+      "required": true,
+      "value": "public"
+    },
+    "PREFIX": {
+      "description": "put any one symbol here except @ and + , leave it Blank if you want to use multiple prefix",
+      "required": false,
+      "value": "*"
+    },
+     "HKEY": {
+      "description": "Put your Heroku api key Here , Get one from here https://dashboard.heroku.com/account",
+      "required": true,
+      "value": ""
+    },
+     "HAPP": {
+      "description": "Put the Heroku app name, same as above entered",
+      "required": true,
+      "value": ""
+    },
+    "statusview": {
+      "description": "make it true if you want bot to view status",
+      "required": true,
+      "value": "true"
+    
+    },
+    "antidelete": {
+      "description": "bot will forward deleted messages if you make it true",
+      "required": true,
+      "value": "true"
+    },
+    "ANTI_LINK": {
+      "description": "it will dlt links and kick user",
+      "required": false,
+      "value": "true"
+    },
+    "AutoReaction": {
+      "description": "make it true to react on chats",
+      "required": false,
+      "value": "false"
+    },
+    "autoreactions_emojies": {
+      "description": "put your favourite emojies for AutoReactions on chats or make it empty for all default emojies",
+      "required": true,
+      "value": "💛,🤍,💗,♥️,💞"
+     },
+    "STATUSVIEW": {
+      "description": "make it true to auto view status and likes",
+      "required": true,
+      "value": "true"
+    },
+    "StatusEmojies": {
+      "description": "Add your favorites emojies for status likes",
+      "required": true,
+      "value": "♥️,🤗,❤️,💞,❣️,💙,💛,🤍,💚,😍,🥰,💝,💖,💗,💓,💞,💕,❣️,💘,💟,🖤,🤎,💜,💫,🌸"
+    },
+    "STATUS_MSG": {
+      "description": "Status reply msg",
+      "required": true,
+      "value": "Your Status has been seen by Watson-Xd-Bot"
+    },
+     "REMOVEBG_KEY": {
+      "description": "your RemoveBg api key",
+      "required": false,
+      "value": ""
+    }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+          }
+  ]
+}
